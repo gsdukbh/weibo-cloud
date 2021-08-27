@@ -1,0 +1,40 @@
+server:
+  port: 8888
+
+# 密钥创建命令 keytool -genkeypair -alias weibo -keyalg RSA -dname "CN=Web Server,OU=Unit,O=Organization,L=City,S=State,C=US" -keypass weibo1234l -keystore server.jks -storepass weibo1234l
+encrypt:
+  key-store:
+    alias: weibo
+    location: server.jks
+    password: weibo1234l
+    secret: weibo1234l
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8001
+  security:
+    user:
+      password: config-server
+  profiles:
+    active: native #暂时使用本地文件，
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/gsdukbh/weibo-cloud
+
+        native:
+          search-locations: classpath:/config

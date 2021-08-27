@@ -1,0 +1,12 @@
+
+dependencies {
+
+    implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'de.codecentric:spring-boot-admin-starter-server'
+    implementation 'org.springframework.cloud:spring-cloud-starter-config'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+description("Springboot admin 微服务监控")

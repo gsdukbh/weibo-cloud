@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: demo
+  cloud:
+    config:
+      uri: http://localhost:8888
+      username: user
+      password: config-server
