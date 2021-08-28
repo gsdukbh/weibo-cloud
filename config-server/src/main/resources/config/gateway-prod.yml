@@ -9,8 +9,14 @@ management:
     web:
       exposure:
         include: '*'
-
 spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+#      路由路径
+      routes:
   boot:
     admin:
       client:
