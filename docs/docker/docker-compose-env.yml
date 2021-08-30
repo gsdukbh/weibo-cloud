@@ -1,0 +1,76 @@
+
+# 运行环境
+version: '3'
+services:
+  elasticsearch:
+    image: elasticsearch:7.12.0
+    container_name: elasticsearch
+    user: root
+    environment:
+      - "cluster.name=elasticsearch" #设置集群名称为elasticsearch
+      - "discovery.type=single-node" #以单一节点模式启动
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m" #设置使用jvm内存大小
+    volumes:
+#      - './mydata/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml'
+      - './mydata/elasticsearch/plugins:/usr/share/elasticsearch/plugins' #插件文件挂载
+      - './mydata/elasticsearch/data:/usr/share/elasticsearch/data' #数据文件挂载
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+  logstash:
+    image: logstash:7.12.0
+    container_name: logstash
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./mydata/logstash/logstash.conf:/usr/share/logstash/pipeline/logstash.conf #挂载logstash的配置文件
+    depends_on:
+      - elasticsearch  #kibana在elasticsearch启动之后再启动
+    links:
+      - elasticsearch:es  #可以用es这个域名访问elasticsearch服务
+    ports:
+      - "4560:4560"
+      - "4561:4561"
+      - "4562:4562"
+      - "4563:4563"
+  kibana:
+    image: kibana:7.12.0
+    container_name: kibana
+    links:
+      - elasticsearch:es #可以用es这个域名访问elasticsearch服务
+    depends_on:
+      - elasticsearch #kibana在elasticsearch启动之后再启动
+    environment:
+      - "elasticsearch.hosts=http://es:9200" #设置访问elasticsearch的地址
+    ports:
+      - "5601:5601"
+  mysql:
+    image: mysql:8.0.26
+    container_name: mysql
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    #    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root #设置root帐号密码
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mydata/mysql/data/db:/var/lib/mysql #数据文件挂载
+      #      - ./mydata/mysql/data/conf:/etc/mysql/conf.d #配置文件挂载
+      - ./mydata/mysql/log:/var/log/mysql #日志文件挂载
+  redis:
+    image: redis:6.0.5
+    container_name: redis
+    command: redis-server --appendonly yes
+    volumes:
+      - ./mydata/redis/data:/data #数据文件挂载
+    ports:
+      - "6379:6379"
+
+#   服务注册中心
+  nacos-Server:
+    image: nacos/nacos-server:v2.0.3
+    container_name: nacos-Server
+    environment:
+      - "MODE=standalone"
+    ports:
+      - 8848:8848
