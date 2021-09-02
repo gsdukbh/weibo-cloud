@@ -1,8 +1,15 @@
-
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-actuator'
-    implementation 'org.springframework.boot:spring-boot-starter-validation'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 }
 
-description( " 公用模块")
+test {
+    useJUnitPlatform()
+}
+bootJar {
+    // 公共工具不需要
+    enabled = false
+}
+jar {
+    enabled = true
+}

@@ -35,6 +35,7 @@ subprojects {
     version '1.0-SNAPSHOT'
     sourceCompatibility = '11'
 
+
     ext {
         set('springCloudVersion', "2020.0.3")
         set("springBootVersion", "2.4.10")
@@ -59,12 +60,11 @@ subprojects {
         mavenCentral()
     }
     dependencies {
-        compileOnly 'org.projectlombok:lombok'
-        developmentOnly 'org.springframework.boot:spring-boot-devtools'
-        annotationProcessor 'org.projectlombok:lombok'
-        testImplementation 'org.springframework.boot:spring-boot-starter-test'
-        implementation 'org.springframework.boot:spring-boot-starter-actuator'
+//        compileOnly 'org.projectlombok:lombok'
+//        developmentOnly 'org.springframework.boot:spring-boot-devtools'
+//        annotationProcessor 'org.projectlombok:lombok'
 //        testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//        implementation 'org.springframework.boot:spring-boot-starter-actuator'
     }
     dependencyManagement {
         imports {

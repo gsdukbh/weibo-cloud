@@ -1,14 +1,20 @@
-dependencies {
 
-    implementation 'de.codecentric:spring-boot-admin-starter-client'
+
+dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-security'
-    implementation 'org.springframework.cloud:spring-cloud-config-server'
+
+    // 这个认证oauth2 认证还在开发中
+    implementation 'org.springframework.security:spring-security-oauth2-authorization-server:0.2.0'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'de.codecentric:spring-boot-admin-starter-client'
     implementation 'org.springframework.cloud:spring-cloud-starter'
-//    implementation 'org.springframework.boot:spring-boot-starter-web'
-    testImplementation 'org.springframework.security:spring-security-test'
+    implementation 'org.springframework.cloud:spring-cloud-starter-config'
+
+
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
 }
+description( '认证服务中心 ')
