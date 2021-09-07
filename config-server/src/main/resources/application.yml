@@ -35,6 +35,6 @@ spring:
       server:
         git:
           uri: https://github.com/gsdukbh/weibo-cloud
-
+          default-label: config  # 分支
         native:
           search-locations: classpath:/config

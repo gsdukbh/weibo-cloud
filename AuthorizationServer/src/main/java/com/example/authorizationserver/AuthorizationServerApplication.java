@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author leejiawei
  */
 @SpringBootApplication
+
 public class AuthorizationServerApplication {
 
     public static void main(String[] args) {
