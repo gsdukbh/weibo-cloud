@@ -3,8 +3,8 @@ spring:
     active: dev
   application:
     name: AuthorizationServer
-  cloud:
-    config:
-      uri: http://localhost:8888
-      username: user
-      password: config-server
+#  cloud:
+#    config:
+#      uri: http://localhost:8888
+#      username: user
+#      password: config-server

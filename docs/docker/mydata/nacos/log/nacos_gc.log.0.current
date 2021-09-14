@@ -1,0 +1,28 @@
+OpenJDK 64-Bit Server VM (25.292-b10) for linux-amd64 JRE (1.8.0_292-b10), built on Apr 21 2021 14:24:48 by "mockbuild" with gcc 4.8.5 20150623 (Red Hat 4.8.5-44)
+Memory: 4k page, physical 2032964k(1060520k free), swap 1048572k(923008k free)
+CommandLine flags: -XX:GCLogFileSize=104857600 -XX:InitialHeapSize=1073741824 -XX:MaxHeapSize=1073741824 -XX:MaxNewSize=536870912 -XX:NewSize=536870912 -XX:NumberOfGCLogFiles=10 -XX:+PrintGC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseGCLogFileRotation -XX:+UseParallelGC 
+2021-09-13T14:59:02.495+0800: 1.234: [GC (GCLocker Initiated GC) [PSYoungGen: 393216K->15000K(458752K)] 393216K->15080K(983040K), 0.0232941 secs] [Times: user=0.04 sys=0.00, real=0.02 secs] 
+2021-09-13T14:59:02.604+0800: 1.343: [GC (Metadata GC Threshold) [PSYoungGen: 101115K->6462K(458752K)] 101196K->6550K(983040K), 0.0061571 secs] [Times: user=0.02 sys=0.00, real=0.00 secs] 
+2021-09-13T14:59:02.611+0800: 1.350: [Full GC (Metadata GC Threshold) [PSYoungGen: 6462K->0K(458752K)] [ParOldGen: 88K->6387K(524288K)] 6550K->6387K(983040K), [Metaspace: 20664K->20662K(1069056K)], 0.0268365 secs] [Times: user=0.07 sys=0.01, real=0.03 secs] 
+2021-09-13T14:59:03.499+0800: 2.238: [GC (Allocation Failure) [PSYoungGen: 393216K->14690K(458752K)] 399613K->21096K(983040K), 0.0258338 secs] [Times: user=0.09 sys=0.00, real=0.03 secs] 
+2021-09-13T14:59:04.436+0800: 3.175: [GC (Allocation Failure) [PSYoungGen: 407906K->28144K(458752K)] 414312K->34557K(983040K), 0.0310885 secs] [Times: user=0.06 sys=0.01, real=0.03 secs] 
+2021-09-13T14:59:05.078+0800: 3.817: [GC (Allocation Failure) [PSYoungGen: 421360K->57668K(458752K)] 427773K->64089K(983040K), 0.0686679 secs] [Times: user=0.11 sys=0.00, real=0.07 secs] 
+2021-09-13T14:59:05.982+0800: 4.721: [GC (Allocation Failure) [PSYoungGen: 450884K->44144K(456192K)] 457305K->50573K(980480K), 0.0454116 secs] [Times: user=0.08 sys=0.01, real=0.05 secs] 
+2021-09-13T14:59:06.282+0800: 5.021: [GC (Metadata GC Threshold) [PSYoungGen: 196228K->32404K(462336K)] 202658K->38841K(986624K), 0.0268355 secs] [Times: user=0.06 sys=0.00, real=0.03 secs] 
+2021-09-13T14:59:06.310+0800: 5.049: [Full GC (Metadata GC Threshold) [PSYoungGen: 32404K->0K(462336K)] [ParOldGen: 6437K->37674K(524288K)] 38841K->37674K(986624K), [Metaspace: 34198K->34198K(1081344K)], 0.0693808 secs] [Times: user=0.25 sys=0.03, real=0.07 secs] 
+2021-09-13T14:59:08.105+0800: 6.866: [GC (Allocation Failure) [PSYoungGen: 400384K->17051K(465920K)] 438058K->54733K(990208K), 0.0181826 secs] [Times: user=0.04 sys=0.00, real=0.02 secs] 
+2021-09-13T14:59:10.286+0800: 9.047: [GC (Metadata GC Threshold) [PSYoungGen: 371903K->26483K(464384K)] 409585K->64173K(988672K), 0.0176540 secs] [Times: user=0.07 sys=0.00, real=0.02 secs] 
+2021-09-13T14:59:10.305+0800: 9.066: [Full GC (Metadata GC Threshold) [PSYoungGen: 26483K->0K(464384K)] [ParOldGen: 37690K->58793K(524288K)] 64173K->58793K(988672K), [Metaspace: 56755K->56755K(1101824K)], 0.1277953 secs] [Times: user=0.56 sys=0.02, real=0.13 secs] 
+2021-09-13T14:59:11.486+0800: 10.247: [GC (Allocation Failure) [PSYoungGen: 406016K->7991K(468480K)] 464809K->66792K(992768K), 0.0102923 secs] [Times: user=0.04 sys=0.00, real=0.01 secs] 
+2021-09-13T14:59:12.611+0800: 11.372: [GC (Allocation Failure) [PSYoungGen: 421687K->23032K(468992K)] 480488K->85645K(993280K), 0.0221491 secs] [Times: user=0.07 sys=0.00, real=0.02 secs] 
+2021-09-13T15:19:50.037+0800: 1249.693: [GC (Allocation Failure) [PSYoungGen: 436728K->12856K(472576K)] 499341K->91102K(996864K), 0.0564449 secs] [Times: user=0.08 sys=0.01, real=0.05 secs] 
+2021-09-13T16:44:00.213+0800: 6303.406: [GC (Allocation Failure) [PSYoungGen: 432696K->14232K(471552K)] 510942K->92486K(995840K), 0.0443925 secs] [Times: user=0.06 sys=0.00, real=0.05 secs] 
+Heap
+ PSYoungGen      total 471552K, used 101547K [0x00000000e0000000, 0x0000000100000000, 0x0000000100000000)
+  eden space 419840K, 20% used [0x00000000e0000000,0x00000000e5544bb0,0x00000000f9a00000)
+  from space 51712K, 27% used [0x00000000f9a00000,0x00000000fa7e61c0,0x00000000fcc80000)
+  to   space 50688K, 0% used [0x00000000fce80000,0x00000000fce80000,0x0000000100000000)
+ ParOldGen       total 524288K, used 78254K [0x00000000c0000000, 0x00000000e0000000, 0x00000000e0000000)
+  object space 524288K, 14% used [0x00000000c0000000,0x00000000c4c6b9d8,0x00000000e0000000)
+ Metaspace       used 84559K, capacity 89224K, committed 89496K, reserved 1126400K
+  class space    used 10415K, capacity 12128K, committed 12208K, reserved 1048576K

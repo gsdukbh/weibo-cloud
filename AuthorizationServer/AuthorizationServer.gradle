@@ -1,16 +1,16 @@
 
 
 dependencies {
-
+//    implementation 'com.alibaba.cloud:spring-cloud-alibaba-nacos-config:2.2.0.RELEASE'
     implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-    // 这个认证oauth2 认证还在开发中
+    // 这个oauth2 认证还在开发中
     implementation 'org.springframework.security:spring-security-oauth2-authorization-server:0.2.0'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'de.codecentric:spring-boot-admin-starter-client'
     implementation 'org.springframework.cloud:spring-cloud-starter'
-    implementation 'org.springframework.cloud:spring-cloud-starter-config'
+//    implementation 'org.springframework.cloud:spring-cloud-starter-config'
 
 
     compileOnly 'org.projectlombok:lombok'

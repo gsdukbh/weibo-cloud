@@ -1,6 +1,7 @@
 package com.example.authorizationserver.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpRequest;
 import org.springframework.security.oauth2.core.endpoint.OAuth2ParameterNames;
 import org.springframework.security.oauth2.server.authorization.OAuth2AuthorizationConsent;
 import org.springframework.security.oauth2.server.authorization.OAuth2AuthorizationConsentService;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.security.Principal;
@@ -31,6 +33,17 @@ public class AuthorizationConsentController {
         this.registeredClientRepository = registeredClientRepository;
         this.authorizationConsentService = authorizationConsentService;
     }
+
+
+    @RequestMapping(value = "/oauth2/authorize")
+    public  String tex(Principal principal, HttpRequest httpRequest){
+
+        System.out.println(httpRequest);
+
+        return  "sc";
+    }
+
+
 
     @GetMapping(value = "/oauth2/consent")
     public String consent(Principal principal, Model model,

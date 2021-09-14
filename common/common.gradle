@@ -13,3 +13,4 @@ bootJar {
 jar {
     enabled = true
 }
+description( "通用工具")

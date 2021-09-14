@@ -27,4 +27,5 @@ buildFiles.each { File buildFile ->
     project.buildFileName = buildFile.name
 }
 include 'common'
+include 'untitled'
 

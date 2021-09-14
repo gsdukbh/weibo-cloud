@@ -70,7 +70,17 @@ services:
   nacos-Server:
     image: nacos/nacos-server:v2.0.3
     container_name: nacos-Server
+    volumes:
+      - ./mydata/nacos/log:/home/nacos/logs
+      - ./mydata/nacos/data:/home/nacos/data
     environment:
       - "MODE=standalone"
+#      - "SPRING_DATASOURCE_PLATFORM=mysql"
+#      - "MYSQL_SERVICE_HOST=rm-wz9shpvmhgv2u84h8zo.mysql.rds.aliyuncs.com"
+#      - "MYSQL_SERVICE_DB_NAME=nacos-demo"
+#      - "MYSQL_SERVICE_USER=weibo"
+#      - "MYSQL_SERVICE_PASSWORD=E1PxsvxFbo#a!!O&h+#4"
+#      - "MYSQL_SERVICE_PORT=3306"
+#      - "MYSQL_SERVICE_DB_PARAM=useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true"
     ports:
       - 8848:8848

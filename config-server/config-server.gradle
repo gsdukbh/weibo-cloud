@@ -12,3 +12,5 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
 }
+
+description("config server 配置中心服务器，已弃用")
