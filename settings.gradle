@@ -28,4 +28,5 @@ buildFiles.each { File buildFile ->
 }
 include 'common'
 include 'untitled'
+include 'demo2'
 

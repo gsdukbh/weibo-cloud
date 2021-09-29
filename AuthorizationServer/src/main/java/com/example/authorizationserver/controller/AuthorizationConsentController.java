@@ -35,15 +35,6 @@ public class AuthorizationConsentController {
     }
 
 
-    @RequestMapping(value = "/oauth2/authorize")
-    public  String tex(Principal principal, HttpRequest httpRequest){
-
-        System.out.println(httpRequest);
-
-        return  "sc";
-    }
-
-
 
     @GetMapping(value = "/oauth2/consent")
     public String consent(Principal principal, Model model,

@@ -1,0 +1,116 @@
+2021-09-13 15:01:00,400 INFO [dump-task] add task. groupKey=gateway-dev+DEFAULT_GROUP, taskKey=gateway-dev+DEFAULT_GROUP++false+null
+
+2021-09-13 16:27:31,321 INFO [dump-task] add task. groupKey=novel-search.yml+novel-search, taskKey=novel-search.yml+novel-search++false+null
+
+2021-09-13 16:27:31,322 INFO [dump-task] add task. groupKey=news-service.yml+news-service, taskKey=news-service.yml+news-service++false+null
+
+2021-09-13 16:27:31,322 INFO [dump-task] add task. groupKey=book-service.yml+book-service, taskKey=book-service.yml+book-service++false+null
+
+2021-09-13 16:27:31,323 INFO [dump-task] add task. groupKey=novel-gateway.yml+novel-gateway, taskKey=novel-gateway.yml+novel-gateway++false+null
+
+2021-09-13 16:27:31,323 INFO [dump-task] add task. groupKey=user-service.yml+user-service, taskKey=user-service.yml+user-service++false+null
+
+2021-09-13 16:27:31,324 INFO [dump-task] add task. groupKey=novel-monitor.yml+novel-monitor, taskKey=novel-monitor.yml+novel-monitor++false+null
+
+2021-09-13 16:27:31,324 INFO [dump-task] add task. groupKey=author-service.yml+author-service, taskKey=author-service.yml+author-service++false+null
+
+2021-09-13 16:27:31,325 INFO [dump-task] add task. groupKey=pay-service.yml+pay-service, taskKey=pay-service.yml+pay-service++false+null
+
+2021-09-13 16:27:31,326 INFO [dump-task] add task. groupKey=novel-home.yml+novel-home, taskKey=novel-home.yml+novel-home++false+null
+
+2021-09-13 16:27:31,326 INFO [dump-task] add task. groupKey=novel-jwt.yml+novel-common, taskKey=novel-jwt.yml+novel-common++false+null
+
+2021-09-13 16:27:31,327 INFO [dump-task] add task. groupKey=novel-redis.yml+novel-common, taskKey=novel-redis.yml+novel-common++false+null
+
+2021-09-13 16:27:31,327 INFO [dump-task] add task. groupKey=novel-rabbitmq.yml+novel-common, taskKey=novel-rabbitmq.yml+novel-common++false+null
+
+2021-09-13 16:27:31,327 INFO [dump-task] add task. groupKey=novel-file.yml+novel-file, taskKey=novel-file.yml+novel-file++false+null
+
+2021-09-13 16:27:45,797 INFO [dump-task] add task. groupKey=novel-search.yml+novel-search, taskKey=novel-search.yml+novel-search++false+null
+
+2021-09-13 16:27:45,798 INFO [dump-task] add task. groupKey=news-service.yml+news-service, taskKey=news-service.yml+news-service++false+null
+
+2021-09-13 16:27:45,798 INFO [dump-task] add task. groupKey=book-service.yml+book-service, taskKey=book-service.yml+book-service++false+null
+
+2021-09-13 16:27:45,799 INFO [dump-task] add task. groupKey=novel-gateway.yml+novel-gateway, taskKey=novel-gateway.yml+novel-gateway++false+null
+
+2021-09-13 16:27:45,799 INFO [dump-task] add task. groupKey=user-service.yml+user-service, taskKey=user-service.yml+user-service++false+null
+
+2021-09-13 16:27:45,800 INFO [dump-task] add task. groupKey=novel-monitor.yml+novel-monitor, taskKey=novel-monitor.yml+novel-monitor++false+null
+
+2021-09-13 16:27:45,801 INFO [dump-task] add task. groupKey=pay-service.yml+pay-service, taskKey=pay-service.yml+pay-service++false+null
+
+2021-09-13 16:27:45,801 INFO [dump-task] add task. groupKey=novel-home.yml+novel-home, taskKey=novel-home.yml+novel-home++false+null
+
+2021-09-13 16:27:45,800 INFO [dump-task] add task. groupKey=author-service.yml+author-service, taskKey=author-service.yml+author-service++false+null
+
+2021-09-13 16:27:52,542 INFO [dump-task] add task. groupKey=novel-jwt.yml+novel-common, taskKey=novel-jwt.yml+novel-common++false+null
+
+2021-09-13 16:27:52,545 INFO [dump-task] add task. groupKey=novel-redis.yml+novel-common, taskKey=novel-redis.yml+novel-common++false+null
+
+2021-09-13 16:27:52,546 INFO [dump-task] add task. groupKey=novel-rabbitmq.yml+novel-common, taskKey=novel-rabbitmq.yml+novel-common++false+null
+
+2021-09-13 16:27:52,549 INFO [dump-task] add task. groupKey=novel-file.yml+novel-file, taskKey=novel-file.yml+novel-file++false+null
+
+2021-09-13 16:28:06,726 INFO [dump-task] add task. groupKey=gateway-dev+DEFAULT_GROUP, taskKey=gateway-dev+DEFAULT_GROUP++false+null
+
+2021-09-13 16:33:27,094 INFO [dump-task] add task. groupKey=gateway-dev+DEFAULT_GROUP, taskKey=gateway-dev+DEFAULT_GROUP++false+null
+
+2021-09-13 16:33:37,718 INFO [dump-task] add task. groupKey=gateway-dev.yml+DEFAULT_GROUP, taskKey=gateway-dev.yml+DEFAULT_GROUP++false+null
+
+2021-09-13 16:33:42,421 INFO [dump-task] add task. groupKey=gateway-dev+DEFAULT_GROUP, taskKey=gateway-dev+DEFAULT_GROUP++false+null
+
+2021-09-13 16:33:50,466 INFO [dump-task] add task. groupKey=novel-search.yml+novel-search, taskKey=novel-search.yml+novel-search++false+null
+
+2021-09-13 16:33:50,467 INFO [dump-task] add task. groupKey=news-service.yml+news-service, taskKey=news-service.yml+news-service++false+null
+
+2021-09-13 16:33:50,468 INFO [dump-task] add task. groupKey=book-service.yml+book-service, taskKey=book-service.yml+book-service++false+null
+
+2021-09-13 16:33:50,469 INFO [dump-task] add task. groupKey=novel-gateway.yml+novel-gateway, taskKey=novel-gateway.yml+novel-gateway++false+null
+
+2021-09-13 16:33:50,470 INFO [dump-task] add task. groupKey=user-service.yml+user-service, taskKey=user-service.yml+user-service++false+null
+
+2021-09-13 16:33:50,470 INFO [dump-task] add task. groupKey=novel-monitor.yml+novel-monitor, taskKey=novel-monitor.yml+novel-monitor++false+null
+
+2021-09-13 16:33:50,471 INFO [dump-task] add task. groupKey=author-service.yml+author-service, taskKey=author-service.yml+author-service++false+null
+
+2021-09-13 16:33:50,472 INFO [dump-task] add task. groupKey=pay-service.yml+pay-service, taskKey=pay-service.yml+pay-service++false+null
+
+2021-09-13 16:33:50,473 INFO [dump-task] add task. groupKey=novel-home.yml+novel-home, taskKey=novel-home.yml+novel-home++false+null
+
+2021-09-13 16:33:50,474 INFO [dump-task] add task. groupKey=novel-jwt.yml+novel-common, taskKey=novel-jwt.yml+novel-common++false+null
+
+2021-09-13 16:33:50,474 INFO [dump-task] add task. groupKey=novel-redis.yml+novel-common, taskKey=novel-redis.yml+novel-common++false+null
+
+2021-09-13 16:33:50,475 INFO [dump-task] add task. groupKey=novel-rabbitmq.yml+novel-common, taskKey=novel-rabbitmq.yml+novel-common++false+null
+
+2021-09-13 16:33:50,476 INFO [dump-task] add task. groupKey=novel-file.yml+novel-file, taskKey=novel-file.yml+novel-file++false+null
+
+2021-09-13 16:34:16,506 INFO [dump-task] add task. groupKey=novel-search.yml+novel-search, taskKey=novel-search.yml+novel-search++false+null
+
+2021-09-13 16:34:16,507 INFO [dump-task] add task. groupKey=news-service.yml+news-service, taskKey=news-service.yml+news-service++false+null
+
+2021-09-13 16:34:16,508 INFO [dump-task] add task. groupKey=book-service.yml+book-service, taskKey=book-service.yml+book-service++false+null
+
+2021-09-13 16:34:16,509 INFO [dump-task] add task. groupKey=novel-gateway.yml+novel-gateway, taskKey=novel-gateway.yml+novel-gateway++false+null
+
+2021-09-13 16:34:16,510 INFO [dump-task] add task. groupKey=user-service.yml+user-service, taskKey=user-service.yml+user-service++false+null
+
+2021-09-13 16:34:16,510 INFO [dump-task] add task. groupKey=novel-monitor.yml+novel-monitor, taskKey=novel-monitor.yml+novel-monitor++false+null
+
+2021-09-13 16:34:16,511 INFO [dump-task] add task. groupKey=author-service.yml+author-service, taskKey=author-service.yml+author-service++false+null
+
+2021-09-13 16:34:16,513 INFO [dump-task] add task. groupKey=pay-service.yml+pay-service, taskKey=pay-service.yml+pay-service++false+null
+
+2021-09-13 16:34:21,881 INFO [dump-task] add task. groupKey=novel-home.yml+novel-home, taskKey=novel-home.yml+novel-home++false+null
+
+2021-09-13 16:34:21,882 INFO [dump-task] add task. groupKey=novel-jwt.yml+novel-common, taskKey=novel-jwt.yml+novel-common++false+null
+
+2021-09-13 16:34:21,883 INFO [dump-task] add task. groupKey=novel-redis.yml+novel-common, taskKey=novel-redis.yml+novel-common++false+null
+
+2021-09-13 16:34:21,884 INFO [dump-task] add task. groupKey=novel-file.yml+novel-file, taskKey=novel-file.yml+novel-file++false+null
+
+2021-09-13 16:34:21,883 INFO [dump-task] add task. groupKey=novel-rabbitmq.yml+novel-common, taskKey=novel-rabbitmq.yml+novel-common++false+null
+
+2021-09-13 16:45:40,065 INFO [dump-task] add task. groupKey=gateway-dev.yml+DEFAULT_GROUP, taskKey=gateway-dev.yml+DEFAULT_GROUP++false+null
+

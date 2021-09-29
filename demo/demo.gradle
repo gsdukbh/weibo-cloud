@@ -1,5 +1,9 @@
 
 dependencies {
+
+    implementation 'com.alibaba.cloud:spring-cloud-alibaba-nacos-config:2.2.0.RELEASE'
+    implementation 'com.alibaba.cloud:spring-cloud-alibaba-nacos-discovery:2.2.0.RELEASE'
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
     implementation 'de.codecentric:spring-boot-admin-starter-client'
     implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
     implementation 'org.springframework.boot:spring-boot-starter-web'
