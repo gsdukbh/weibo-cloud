@@ -4,15 +4,15 @@ spring:
   application:
     name: demo
   cloud:
-    nacos:
-      discovery:
-        server-addr: http://localhost:8848
-      config:
-        server-addr:  http://localhost:8848
-        file-extension: yml
+#    nacos:
+#      discovery:
+#        server-addr: http://localhost:8848
+#      config:
+#        server-addr:  http://localhost:8848
+#        file-extension: yml
 
 
-#    config:
-#      uri: http://localhost:8888
-#      username: user
-#      password: config-server
+    config:
+      uri: http://localhost:8888
+      username: user
+      password: config-server
