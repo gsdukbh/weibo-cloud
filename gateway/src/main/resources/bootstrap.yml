@@ -1,20 +1,18 @@
 spring:
+  security:
+    user:
+      password: admin
   profiles:
     active: dev
   application:
     name: gateway
   cloud:
-    nacos:
-      config:
-        group: DEFAULT_GROUP
-        file-extension: yml
-        server-addr: http://localhost:8848
     gateway:
       discovery:
         locator:
-          enabled: true
-      routes:
-#    config:
-#      uri: http://localhost:8888
-#      username: user
-#      password: config-server
+          enabled: false
+    config:
+      uri: http://localhost:8888
+      username: user
+      password: config-server
+      allow-override: true

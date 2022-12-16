@@ -5,8 +5,8 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-    // 这个oauth2 认证还在开发中
-    implementation 'org.springframework.security:spring-security-oauth2-authorization-server:0.2.0'
+
+    implementation 'org.springframework.security:spring-security-oauth2-authorization-server:1.0.0'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'de.codecentric:spring-boot-admin-starter-client'
     implementation 'org.springframework.cloud:spring-cloud-starter'

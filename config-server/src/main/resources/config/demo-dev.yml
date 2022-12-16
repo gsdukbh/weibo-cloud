@@ -14,5 +14,4 @@ spring:
     admin:
       client:
         url: http://localhost:8001
-env:
-  hi: google
+foo : "this is demo  dev"

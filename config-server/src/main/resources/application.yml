@@ -23,9 +23,9 @@ spring:
     admin:
       client:
         url: http://localhost:8001
-  security:
-    user:
-      password: config-server
+#  security:
+#    user:
+#      password: config-server
   profiles:
     active: native #暂时使用本地文件，
   application:
@@ -33,8 +33,5 @@ spring:
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/gsdukbh/weibo-cloud
-          default-label: config  # 分支
         native:
           search-locations: classpath:/config
