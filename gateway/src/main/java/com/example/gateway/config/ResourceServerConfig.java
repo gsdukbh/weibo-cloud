@@ -7,7 +7,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
  * created on  2021/9/13
  * @author leejiawei
  */
-@EnableWebSecurity
+//@EnableWebSecurity
 public class ResourceServerConfig {
 
 }

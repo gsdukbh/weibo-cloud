@@ -59,6 +59,10 @@ subprojects {
         mavenCentral()
     }
     dependencies {
+        // spring doc https://springdoc.org/v2
+        implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.0'
+        implementation 'com.google.code.gson:gson:2.10'
+        implementation 'org.apache.commons:commons-lang3:3.12.0'
         compileOnly 'org.projectlombok:lombok'
         annotationProcessor 'org.projectlombok:lombok'
         testImplementation 'org.springframework.boot:spring-boot-starter-test'

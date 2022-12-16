@@ -1,4 +1,4 @@
-package com.example.log;
+package com.example.common.log;
 
 /**
  * created on  2021/8/31

@@ -27,3 +27,10 @@ spring:
     admin:
       client:
         url: http://localhost:8001
+env:
+  jwt:
+    expire: 30
+    tokenHeader: Authorization
+    tokenPrefix: 'Bearer'
+    privateKey: classpath:private.pem
+    publicKey: classpath:public.pem
