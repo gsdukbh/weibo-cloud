@@ -29,7 +29,7 @@ public class UserDetailsServiceImpl implements ReactiveUserDetailsService {
     @Override
     public Mono<UserDetails> findByUsername(String username) {
         List<GrantedAuthority> authorities = new ArrayList<>();
-        authorities.add(() -> "ROLE_USER");
+        authorities.add(() -> "ROLE_ADMIN");
         User user =
                 new User(
                         username,

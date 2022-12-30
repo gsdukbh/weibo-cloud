@@ -32,13 +32,13 @@ public class TokenAuthenticationManager implements ReactiveAuthenticationManager
    */
   @Override
   public Mono<Authentication> authenticate(Authentication authentication) {
-    log.warn("   this  TokenAuthenticationManager {}",authentication);
-    return  userDetailsService
-        .findByUsername("csa")
+    log.warn("   this  TokenAuthenticationManager {}", authentication);
+    var username = authentication.getPrincipal().toString();
+    return userDetailsService
+        .findByUsername(username)
         .map(
-            userDetails -> new UsernamePasswordAuthenticationToken(
-                userDetails, null, userDetails.getAuthorities()));
-
-
+            userDetails ->
+                new UsernamePasswordAuthenticationToken(
+                    userDetails, null, userDetails.getAuthorities()));
   }
 }

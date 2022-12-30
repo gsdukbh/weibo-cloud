@@ -44,6 +44,7 @@ public class SecurityConfig {
   public SecurityWebFilterChain config(ServerHttpSecurity http) {
 
     http.authorizeExchange().pathMatchers("/demo/hi").permitAll().anyExchange().denyAll();
+    http.authorizeExchange().pathMatchers("/de").hasRole("ADMIN");
     http.formLogin();
     http.authenticationManager(manager())
         .securityContextRepository(defaultSecurityContextRepository);
