@@ -1,4 +1,4 @@
-package com.example.annotation;
+package com.example.common.utils;
 
 /**
  * created on  2021/8/31
@@ -6,5 +6,4 @@ package com.example.annotation;
  * @author leejiawei
  */
 public class Demo {
-
 }

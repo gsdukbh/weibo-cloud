@@ -1,17 +1,4 @@
-
-pluginManagement {
-    repositories {
-        maven { url 'https://repo.spring.io/milestone' }
-        maven { url 'https://repo.spring.io/snapshot' }
-        gradlePluginPortal()
-    }
-}
 rootProject.name = 'weibo-cloud'
-//include 'gateway'
-//include 'demo'
-//include 'config-server'
-//include 'monitor'
-
 // 自动扫描子项目，并使用 .gradle 命名项目名称
 FileTree buildFiles = fileTree(rootDir) {
     include '**/*.gradle'
@@ -26,7 +13,4 @@ buildFiles.each { File buildFile ->
     project.projectDir = buildFile.parentFile
     project.buildFileName = buildFile.name
 }
-include 'common'
-include 'untitled'
-include 'demo2'
 

@@ -1,7 +1,7 @@
 buildscript {
     ext {
-        set("springBootVersion", "2.4.10")
-        set("springBootManagementVersion", "1.0.11.RELEASE")
+        set("springBootVersion", "3.0.0")
+        set("springBootManagementVersion", "1.1.0")
         set('springCloudAibaba','2.2.6.RELEASE')
     }
     repositories {
@@ -13,22 +13,27 @@ buildscript {
 
 
         maven { url 'https://repo.spring.io/milestone' }
-        maven { url 'https://repo.spring.io/snapshot' }
         mavenCentral()
     }
     dependencies {
-        classpath("com.alibaba.cloud:spring-cloud-alibaba-dependencies:${springCloudAibaba}")
+//        classpath("com.alibaba.cloud:spring-cloud-alibaba-dependencies:${springCloudAibaba}")
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
         classpath("io.spring.gradle:dependency-management-plugin:${springBootManagementVersion}")
     }
 }
-
+plugins{
+    id 'java'
+    id 'org.springframework.boot' version '3.0.0' apply false
+    id 'io.spring.dependency-management' version '1.1.0' apply false
+    id 'org.graalvm.buildtools.native' version '0.9.18' apply false
+}
 // 子项目通用配置
 subprojects {
 
     apply plugin: 'org.springframework.boot'
     apply plugin: "io.spring.dependency-management"
     apply plugin: "java"
+    apply plugin: 'org.graalvm.buildtools.native'
 
     group 'org.example'
     version '1.0-SNAPSHOT'
@@ -36,17 +41,12 @@ subprojects {
 
 
     ext {
-        set('springCloudVersion', "2020.0.3")
-        set("springBootVersion", "2.4.10")
-        set('springBootAdminVersion', "2.4.3")
+        set('springCloudVersion', "2022.0.0-RC3")
+        set("springBootVersion", "3.0.0")
+        set('springBootAdminVersion', "3.0.0-M5")
         set('springCloudAibaba','2.2.6.RELEASE')
     }
 
-    configurations {
-        compileOnly {
-            extendsFrom annotationProcessor
-        }
-    }
     repositories {
         mavenLocal()
         //使用阿里云镜像代理 网络不佳时使用；会报 Fatal Error 但不影响使用
@@ -56,15 +56,16 @@ subprojects {
 
 
         maven { url 'https://repo.spring.io/milestone' }
-        maven { url 'https://repo.spring.io/snapshot' }
         mavenCentral()
     }
     dependencies {
-//        compileOnly 'org.projectlombok:lombok'
-//        developmentOnly 'org.springframework.boot:spring-boot-devtools'
-//        annotationProcessor 'org.projectlombok:lombok'
-//        testImplementation 'org.springframework.boot:spring-boot-starter-test'
-//        implementation 'org.springframework.boot:spring-boot-starter-actuator'
+        // spring doc https://springdoc.org/v2
+//        implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.0'
+        implementation 'com.google.code.gson:gson:2.10'
+        implementation 'org.apache.commons:commons-lang3:3.12.0'
+        compileOnly 'org.projectlombok:lombok'
+        annotationProcessor 'org.projectlombok:lombok'
+        testImplementation 'org.springframework.boot:spring-boot-starter-test'
     }
     dependencyManagement {
 
@@ -72,22 +73,10 @@ subprojects {
             mavenBom "de.codecentric:spring-boot-admin-dependencies:${springBootAdminVersion}"
             mavenBom "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
             mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
-            mavenBom "com.alibaba.cloud:spring-cloud-alibaba-dependencies:${springCloudAibaba}"
+//            mavenBom "com.alibaba.cloud:spring-cloud-alibaba-dependencies:${springCloudAibaba}"
         }
     }
 
-
-    jar {
-        enabled true
-        // 构建一个完整的jar 包
-        // 新方法 ，https://docs.gradle.org/current/userguide/working_with_files.html#sec:creating_uber_jar_example
-        archiveClassifier = 'boot'
-        from sourceSets.main.output
-        dependsOn configurations.runtimeClasspath
-        from {
-            configurations.runtimeClasspath.findAll { it.name.endsWith('jar') }.collect { zipTree(it) }
-        }
-    }
     test {
         useJUnitPlatform()
     }

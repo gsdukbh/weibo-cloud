@@ -1,16 +1,18 @@
 dependencies {
 
-    implementation 'de.codecentric:spring-boot-admin-starter-client'
-    implementation 'org.springframework.boot:spring-boot-starter-security'
+//    implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.cloud:spring-cloud-config-server'
+    implementation 'de.codecentric:spring-boot-admin-starter-client'
     implementation 'org.springframework.cloud:spring-cloud-starter'
-//    implementation 'org.springframework.boot:spring-boot-starter-web'
-    testImplementation 'org.springframework.security:spring-security-test'
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
-    developmentOnly 'org.springframework.boot:spring-boot-devtools'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
-}
 
+    testImplementation 'org.springframework.security:spring-security-test'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
+}
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
 description("config server 配置中心服务器，已弃用")

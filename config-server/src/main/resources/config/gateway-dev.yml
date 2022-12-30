@@ -11,14 +11,26 @@ management:
         include: '*'
 
 spring:
+
   cloud:
     gateway:
       discovery:
         locator:
-          enabled: true
+          enabled: false
       #      路由路径
       routes:
+        - id: demo
+          uri:  http://localhost:8100/
+          predicates:
+            - Path=/demo/**
   boot:
     admin:
       client:
         url: http://localhost:8001
+env:
+  jwt:
+    expire: 30
+    tokenHeader: Authorization
+    tokenPrefix: 'Bearer'
+    privateKey: classpath:private.pem
+    publicKey: classpath:public.pem
