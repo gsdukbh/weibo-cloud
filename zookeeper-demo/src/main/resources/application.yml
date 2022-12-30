@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: zookeeper
+  cloud:
+    zookeeper:
+      discovery:
+        enabled: true
+server:
+  port: 8009

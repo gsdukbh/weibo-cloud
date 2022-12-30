@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        set("springBootVersion", "3.0.0")
+        set("springBootVersion", "3.0.1")
         set("springBootManagementVersion", "1.1.0")
         set('springCloudAibaba','2.2.6.RELEASE')
     }
@@ -41,8 +41,8 @@ subprojects {
 
 
     ext {
-        set('springCloudVersion', "2022.0.0-RC3")
-        set("springBootVersion", "3.0.0")
+        set('springCloudVersion', "2022.0.0")
+        set("springBootVersion", "3.0.1")
         set('springBootAdminVersion', "3.0.0-M5")
         set('springCloudAibaba','2.2.6.RELEASE')
     }

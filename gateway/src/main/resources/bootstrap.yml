@@ -8,6 +8,17 @@ spring:
       discovery:
         locator:
           enabled: false
+      routes:
+        - id: ia
+          uri: http://localhost:8100/
+          filters:
+            - name: li
+              args:
+                redis-rate-limiter:
+                    replenishRate:10
+                    burstCapacity:20
+                    requestedTokens:1
+
     config:
       uri: http://localhost:8888
       username: user
