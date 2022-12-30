@@ -1,7 +1,8 @@
 package com.example.common.utils.crypto.cache.impl;
 
 
-import top.werls.springboottemplate.common.utils.cache.Cache;
+
+import com.example.common.utils.crypto.cache.Cache;
 
 import java.io.Serial;
 import java.util.Iterator;

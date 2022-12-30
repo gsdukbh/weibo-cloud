@@ -1,8 +1,5 @@
 package com.example.gateway.controller;
 
-import com.example.common.utils.JwtTokenUtils;
-import jakarta.annotation.Resource;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,16 +10,18 @@ import org.springframework.web.bind.annotation.RestController;
  * @since on
  */
 @RestController
-@ComponentScan("com.example.common")
+
 public class TestController {
-    @Resource
-    private JwtTokenUtils tokenUtils;
+
 
     @GetMapping("/de")
     public String token(){
+        return "asdas";
+    }
 
-        return  tokenUtils.generateToken("tken");
-
+//    @GetMapping("/login")
+    public String login( String username ,String passwd){
+        return  "login";
     }
 
 }

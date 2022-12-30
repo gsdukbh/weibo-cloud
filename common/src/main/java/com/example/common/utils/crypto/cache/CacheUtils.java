@@ -2,7 +2,9 @@ package com.example.common.utils.crypto.cache;
 
 
 
-import top.werls.springboottemplate.common.utils.cache.impl.SimpleCache;
+
+
+import com.example.common.utils.crypto.cache.impl.SimpleCache;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
