@@ -1,3 +1,5 @@
 spring:
   application:
     name: client2
+server:
+  port: 8081

@@ -1,6 +1,7 @@
-package com.example.natflixclient1;
+package com.example.natflixclient1.comm;
 
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 
 /**
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @date 2022/12/30
  * @since on
  */
+@Component
 @FeignClient("client1")
 public interface GetClient {
 
